@@ -41,7 +41,7 @@ The project structure is organized as follows:
 - `src`: Contains TypeScript source files
     - `index.ts`: Configures and starts the Express application
     - `data`: Contains stuff related to the database
-          - `data-source.ts` Initializes Prisma instance
+        - `data-source.ts` Initializes Prisma instance 
     - `modules`: Contains stuff
         - `routes` Contains web routes
             - `auth.ts` Configures authentication requests
