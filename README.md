@@ -1,4 +1,4 @@
-# TypeScript x Express x Node.js x Prisma + project structure setup
+# TypeScript x Express x Node.js x Prisma x Zod
 
 Install the project dependencies:
 
