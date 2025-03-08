@@ -1,4 +1,15 @@
-# TypeScript x Express x Node.js x Prisma x Zod
+# Barebones, basic modern web backend setup
+
+## Dependency list:
+- `TypeScript`
+- `Express`
+- `Prisma`
+- `Zod`
+- `Nodemon`
+
+## Key features:
+- `Simple token based auth`
+- `Barebones structure`
 
 Install the project dependencies:
 
@@ -14,7 +25,7 @@ For development purposes, you can run the application using Nodemon to automatic
 npm run dev
 ```
 
-This will start the server at `http://localhost:3000` by default. You can change the port in the `src/index.ts` file or create an `.env` file to manage the environt-specific variables separately.
+This will start the server at `http://localhost:1337` by default. You can change the port in the `src/index.ts` file or create an `.env` file to manage the environt-specific variables separately.
 
 For production, you can build the TypeScript files and then start the server. Run the following commands:
 
@@ -29,6 +40,14 @@ The project structure is organized as follows:
 
 - `src`: Contains TypeScript source files
     - `index.ts`: Configures and starts the Express application
+    - `data`: Contains stuff related to the database
+          - `data-source.ts` Initializes Prisma instance
+    - `modules`: Contains stuff
+        - `routes` Contains web routes
+            - `auth.ts` Configures authentication requests
+        - `utilities` Contains different utilities in seperate files
+            - `auth-util.ts` Auth utilities
+            - `route-util.ts` Routing utilities
 - `dist`: Output directory created during build for compiled TypeScript files
 - `package.json`: Project configuration and dependencies
 - `tsconfig.json`: TypeScript configuration
